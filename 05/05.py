@@ -93,10 +93,13 @@ def part_b():
             if not found_rule:
                 new_seed.append(seed)
         # print(new_seed)
+        print(len(new_seed))
         seeds = compact_seeds(new_seed)
+        print(len(seeds))
         # print(seeds)
         # print()
         # print()
+    print(len(seeds))
     print(f"Part B: {min([seed[0] for seed in seeds])}")
     t_1 = time.time()
     print(f"ran in {t_1 - t_0} seconds")
